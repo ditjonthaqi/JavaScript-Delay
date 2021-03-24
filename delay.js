@@ -9,9 +9,16 @@ async function delay(time) {
 
 
 
-//example 
-
-
+//example 1
 delay(2).then(() => {
      //your code
 });
+
+//example 2
+(async function () {
+    await delay(3);
+    console.log("done");
+} )();
+
+
+
